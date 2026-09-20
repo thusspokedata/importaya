@@ -16,25 +16,27 @@ ofrecer un contacto de WhatsApp tappable.
 - **Sí:** una sola página estática mostrando la infografía + botón flotante de WhatsApp + SEO/OpenGraph básico.
 - **No:** formularios, backend, CMS, analytics, múltiples páginas, i18n, cookie banners.
 
-## Asset
+## Assets (dos imágenes)
 
-- Imagen fuente: `assets/importaya.png` (1460×1534, PNG, ~3 MB). Copiada desde `~/Downloads/importaya.png`.
-- La imagen incluye ya: logo IMPORTAYA by VERTEX, tagline "Tu negocio sin fronteras",
-  los 5 pasos, "Ideal para", y contactos: WhatsApp **385 334 1111**, Instagram **@importaya**, web **importaya.com.ar**.
+- **Hero / home:** `assets/hero.png` (1592×1562, PNG, ~4 MB). Copiada desde `~/Downloads/importaya2.png`.
+  "DE CHINA... hasta tu negocio", "Comprá en China. Nosotros lo acercamos a tu negocio",
+  WhatsApp "Cotizá tu envío **385 334 1111**", provincias, "Un servicio de VERTEX", web importaya.com.ar.
+- **Proceso / operatoria:** `assets/proceso.png` (1460×1534, PNG, ~3 MB). Copiada desde `~/Downloads/importaya.png`.
+  "¿Cómo funciona? Es muy simple" con los 5 pasos, "Ideal para", contactos.
 
 ## Sitio
 
-Un `index.html` + `assets/importaya.png` + CSS inline/mínimo. Sin frameworks, sin build.
+Un `index.html` + `assets/hero.png` + `assets/proceso.png` + CSS inline/mínimo. Sin frameworks, sin build.
 
-- **Layout:** imagen centrada. En móvil ocupa el ancho completo; en desktop con `max-width`
-  (~820px, acorde al aspecto casi cuadrado 1460×1534) centrada sobre fondo celeste claro
-  que combina con la infografía.
-- **Imagen responsive:** `img` con `width:100%; height:auto; max-width`. `loading="eager"`,
-  `alt` descriptivo ("IMPORTAYA by VERTEX — Cómo funciona: importá desde China a Argentina").
+- **Layout (una sola página):** hero arriba, y al hacer scroll la imagen de proceso debajo.
+  Ambas centradas; en móvil ocupan el ancho completo; en desktop con `max-width` (~820px,
+  aspecto casi cuadrado) centradas sobre fondo celeste claro que combina con las infografías.
+- **Imágenes responsive:** cada `img` con `width:100%; height:auto; max-width`.
+  Hero `loading="eager"`; proceso `loading="lazy"`. `alt` descriptivo en cada una.
 - **Botón flotante WhatsApp (FAB):** verde, fijo abajo a la derecha, siempre visible,
   con ícono. Link: `https://wa.me/5493853341111`
   (número **385 334 1111**, Santiago del Estero → `+54 9 385 334 1111`). `target="_blank" rel="noopener"`.
-  ⚠️ Verificar el número con el cliente antes de publicar.
+  Número **385 334 1111** confirmado por el cliente.
 - **SEO / social:** `<title>`, `<meta name="description">`, OpenGraph (`og:title`, `og:description`,
   `og:image` apuntando a la propia infografía, `og:url`), `theme-color`, favicon, `lang="es"`,
   viewport meta. Preview lindo cuando se comparte por WhatsApp/redes.
@@ -86,7 +88,6 @@ Mismo patrón ya usado en la infra (ej. `lahuelladelcaminante-com`, `viajarpais`
 
 ## Riesgos / cuestiones abiertas
 
-- **Número de WhatsApp:** asumido `+54 9 385 334 1111`. Confirmar con el cliente.
 - **DNS:** fuera de nuestro control; el HTTPS queda pendiente hasta que el cliente lo configure.
 - **Tamaño imagen (~3 MB):** aceptable para un landing de una sola imagen; se puede optimizar
   (WebP) más adelante si hace falta, no ahora.

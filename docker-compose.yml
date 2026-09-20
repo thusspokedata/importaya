@@ -1,0 +1,8 @@
+services:
+  importaya:
+    build: .
+    image: importaya:latest
+    container_name: importaya
+    restart: unless-stopped
+    ports:
+      - "3010:80"
