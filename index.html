@@ -7,6 +7,7 @@
   <meta name="description" content="Importá desde China a Argentina de forma rápida, segura y simple. Recepción, consolidación, envío por courier y entrega en tu puerta. Cotizá tu envío por WhatsApp: 385 334 1111.">
   <meta name="theme-color" content="#0a2540">
   <link rel="canonical" href="https://importaya.com.ar/">
+
   <meta property="og:type" content="website">
   <meta property="og:title" content="ImportaYa by Vertex — Tu negocio sin fronteras">
   <meta property="og:description" content="Comprá en China, nosotros lo acercamos a tu negocio en Argentina. Rápido, seguro y simple.">
@@ -14,19 +15,20 @@
   <meta property="og:image" content="https://importaya.com.ar/assets/og.svg">
   <meta property="og:locale" content="es_AR">
   <meta name="twitter:card" content="summary_large_image">
+
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="/styles.css">
   <link rel="stylesheet" href="/css/form.css">
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- ===================== HEADER ===================== -->
   <header class="header">
     <div class="container">
-      <a class="logo" href="#top" aria-label="ImportaYa por Vertex">
+      <a class="logo" href="#top" aria-label="ImportaYa por Vertex — inicio">
         <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true">
           <rect width="64" height="64" rx="14" fill="#0a2540"/>
           <path d="M14 42 L40 42" stroke="#1e8fe0" stroke-width="4" stroke-linecap="round"/>
@@ -35,197 +37,315 @@
           <path d="M18 24 H38 M28 18 V34" stroke="#0a2540" stroke-width="2"/>
         </svg>
         <span class="logo-text">
-          <span class="logo-word"><span class="b">IMPORTA</span><span class="y">YA</span></span>
+          <span class="logo-word"><span class="lw-b">IMPORTA</span><span class="lw-y">YA</span></span>
           <span class="logo-sub">by Vertex · Soluciones Globales</span>
         </span>
       </a>
-      <div class="header-right">
-        <a class="alt-link" href="/pro/">Ver versión alternativa →</a>
-        <a class="btn btn--wa" href="#cotizar">
-          <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.1 1.6 5.9L4 29l8.2-1.6A12 12 0 1 0 16 3Zm0 21.6c-1.8 0-3.5-.5-5-1.3l-.4-.2-4.9 1 .9-4.8-.2-.4A9.6 9.6 0 1 1 16 24.6Zm5.3-7.2c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1l-.9 1.1c-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.6-.5h-.6c-.2 0-.5.1-.8.4-1 1-1 2.4-1 3.8.1 1.4 1.1 2.8 1.2 3 .1.2 2 3.1 4.9 4.4 2.9 1.2 2.9.8 3.5.8.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3Z"/></svg>
-          <span class="lbl">Cotizá tu envío</span>
-        </a>
-      </div>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#ideal">Ideal para</a>
+        <a href="#cobertura">Cobertura</a>
+        <a href="#cotizar">Cotizar</a>
+      </nav>
+      <a class="btn btn--wa" href="https://wa.me/5493853341111" target="_blank" rel="noopener">
+        <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.1 1.6 5.9L4 29l8.2-1.6A12 12 0 1 0 16 3Zm0 21.6c-1.8 0-3.5-.5-5-1.3l-.4-.2-4.9 1 .9-4.8-.2-.4A9.6 9.6 0 1 1 16 24.6Zm5.3-7.2c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1l-.9 1.1c-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.6-.5h-.6c-.2 0-.5.1-.8.4-1 1-1 2.4-1 3.8.1 1.4 1.1 2.8 1.2 3 .1.2 2 3.1 4.9 4.4 2.9 1.2 2.9.8 3.5.8.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3Z"/></svg>
+        <span class="btn-label">Cotizá tu envío</span>
+      </a>
     </div>
   </header>
 
   <main id="top">
-    <!-- HERO POSTER -->
-    <section class="hero">
-      <div class="container">
-        <div class="poster">
-          <div class="sky">
-            <span class="ribbon">DE CHINA…<br>oportunidades reales</span>
-            <div class="sky-top"><span class="accent">…hasta tu negocio</span></div>
-            <svg class="scene" viewBox="0 0 560 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <defs>
-                <linearGradient id="plane" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#d7e8f7"/></linearGradient>
-                <filter id="ds" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#04203f" flood-opacity="0.45"/></filter>
-                <path id="star" d="M0,-1 L0.225,-0.309 L0.951,-0.309 L0.363,0.118 L0.588,0.809 L0,0.382 L-0.588,0.809 L-0.363,0.118 L-0.951,-0.309 L-0.225,-0.309 Z"/>
-              </defs>
-              <path d="M110 250 C 185 70, 375 70, 450 250" fill="none" stroke="#e6f3ff" stroke-width="3" stroke-dasharray="2 12" stroke-linecap="round" opacity=".95"/>
-              <!-- plane -->
-              <g transform="translate(280 104) rotate(-8)">
-                <path d="M20 -4 L -16 -60 L -3 -60 L 44 -2 Z" fill="#bcd6ef"/>
-                <path d="M20 4 L -16 60 L -3 60 L 44 2 Z" fill="#bcd6ef"/>
-                <path d="M-52 -3 L -76 -28 L -66 -28 L -44 -2 Z" fill="#cfe2f4"/>
-                <path d="M-52 3 L -76 28 L -66 28 L -44 2 Z" fill="#cfe2f4"/>
-                <ellipse cx="8" cy="-22" rx="9" ry="4.6" fill="#a9cbec"/>
-                <ellipse cx="8" cy="22" rx="9" ry="4.6" fill="#a9cbec"/>
-                <path d="M86 0 C 78 -9, 40 -12, -34 -12 C -58 -12, -76 -9, -84 0 C -76 9, -58 12, -34 12 C 40 12, 78 9, 86 0 Z" fill="url(#plane)"/>
-                <path d="M-84 0 L -98 -18 L -86 -18 L -66 -3 Z" fill="#eaf4ff"/>
-                <path d="M86 0 C 80 -6, 72 -7, 66 -6 L 66 6 C 72 7, 80 6, 86 0 Z" fill="#bcd6ef"/>
-                <circle cx="42" cy="0" r="3.1" fill="#1573bd"/><circle cx="26" cy="0" r="3.1" fill="#1573bd"/>
-                <circle cx="10" cy="0" r="3.1" fill="#1573bd"/><circle cx="-6" cy="0" r="3.1" fill="#1573bd"/>
-              </g>
-              <!-- China flag -->
-              <g transform="translate(86 234)" filter="url(#ds)">
-                <rect width="48" height="32" rx="4" fill="#de2910"/>
-                <g fill="#ffde00">
-                  <use href="#star" transform="translate(12 12) scale(6.5)"/>
-                  <use href="#star" transform="translate(25 5) scale(2.3)"/>
-                  <use href="#star" transform="translate(31 11) scale(2.3)"/>
-                  <use href="#star" transform="translate(31 19) scale(2.3)"/>
-                  <use href="#star" transform="translate(25 25) scale(2.3)"/>
-                </g>
-                <rect width="48" height="32" rx="4" fill="none" stroke="#fff" stroke-opacity=".9" stroke-width="2"/>
-              </g>
-              <text x="110" y="288" fill="#fff" font-family="Poppins,sans-serif" font-size="15" font-weight="700" text-anchor="middle">China</text>
-              <!-- Argentina flag -->
-              <g transform="translate(426 234)" filter="url(#ds)">
-                <clipPath id="argClip"><rect width="48" height="32" rx="4"/></clipPath>
-                <g clip-path="url(#argClip)">
-                  <rect width="48" height="32" fill="#fff"/>
-                  <rect width="48" height="10.7" fill="#74acdf"/>
-                  <rect y="21.3" width="48" height="10.7" fill="#74acdf"/>
-                  <g stroke="#f6b40e" stroke-width="1.6" stroke-linecap="round">
-                    <line x1="29.5" y1="16" x2="33" y2="16"/><line x1="18.5" y1="16" x2="15" y2="16"/>
-                    <line x1="24" y1="9.5" x2="24" y2="6"/><line x1="24" y1="22.5" x2="24" y2="26"/>
-                    <line x1="28.6" y1="11.4" x2="31.1" y2="8.9"/><line x1="19.4" y1="20.6" x2="16.9" y2="23.1"/>
-                    <line x1="28.6" y1="20.6" x2="31.1" y2="23.1"/><line x1="19.4" y1="11.4" x2="16.9" y2="8.9"/>
-                  </g>
-                  <circle cx="24" cy="16" r="4.6" fill="#f6b40e"/>
-                </g>
-                <rect width="48" height="32" rx="4" fill="none" stroke="#fff" stroke-opacity=".9" stroke-width="2"/>
-              </g>
-              <text x="450" y="288" fill="#fff" font-family="Poppins,sans-serif" font-size="15" font-weight="700" text-anchor="middle">Argentina</text>
-            </svg>
-          </div>
 
-          <div class="poster-body">
-            <div class="poster-logo">
-              <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true">
-                <rect width="64" height="64" rx="14" fill="#0a2540"/>
-                <path d="M14 42 L40 42" stroke="#1e8fe0" stroke-width="4" stroke-linecap="round"/>
-                <path d="M34 36 L44 42 L34 48" fill="none" stroke="#1e8fe0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                <rect x="18" y="18" width="20" height="16" rx="2.5" fill="#fff"/>
-                <path d="M18 24 H38 M28 18 V34" stroke="#0a2540" stroke-width="2"/>
-              </svg>
-              <span class="logo-text">
-                <span class="logo-word"><span class="b">IMPORTA</span><span class="y">YA</span></span>
-                <span class="logo-sub">by Vertex · Soluciones Globales</span>
-              </span>
-            </div>
-            <h1>Comprá en China.<br><span class="blue">Nosotros lo acercamos a tu negocio.</span></h1>
-            <div class="pills">
-              <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg> Rápido</span>
-              <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5z"/></svg> Seguro</span>
-              <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Simple</span>
-            </div>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero on-dark">
+      <div class="container">
+        <div class="hero-copy">
+          <span class="hero-badge">De China <b>→</b> hasta tu negocio</span>
+          <h1>Comprá en China.<br><span class="accent">Te lo acercamos</span> a tu negocio.</h1>
+          <p class="hero-sub">Gestionamos toda tu importación desde China hasta la puerta de tu negocio en Argentina. Vos encontrás el producto, nosotros te ayudamos a traerlo.</p>
+          <div class="hero-pills">
+            <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg> Rápido</span>
+            <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5z"/></svg> Seguro</span>
+            <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Simple</span>
           </div>
+          <div class="hero-cta">
+            <a class="btn btn--wa" href="#cotizar">
+              <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.1 1.6 5.9L4 29l8.2-1.6A12 12 0 1 0 16 3Zm0 21.6c-1.8 0-3.5-.5-5-1.3l-.4-.2-4.9 1 .9-4.8-.2-.4A9.6 9.6 0 1 1 16 24.6Zm5.3-7.2c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1l-.9 1.1c-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.6-.5h-.6c-.2 0-.5.1-.8.4-1 1-1 2.4-1 3.8.1 1.4 1.1 2.8 1.2 3 .1.2 2 3.1 4.9 4.4 2.9 1.2 2.9.8 3.5.8.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3Z"/></svg>
+              Cotizá tu envío
+            </a>
+            <a class="btn btn--ghost" href="#como-funciona">Cómo funciona</a>
+          </div>
+          <div class="hero-trust">
+            <span><b>Pequeños envíos.</b> Grandes oportunidades.</span>
+            <span aria-hidden="true">•</span>
+            <span>Cobertura en <b>todo el país</b></span>
+          </div>
+        </div>
+
+        <!-- Hero illustration -->
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 520 460" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#0f3a68"/><stop offset="1" stop-color="#0b2b50"/>
+              </linearGradient>
+              <linearGradient id="plane" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d7e8f7"/>
+              </linearGradient>
+              <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+                <stop offset="0" stop-color="#3f88c9" stop-opacity=".5"/>
+                <stop offset="1" stop-color="#3f88c9" stop-opacity="0"/>
+              </radialGradient>
+              <filter id="ds" x="-40%" y="-40%" width="180%" height="180%">
+                <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#04162c" flood-opacity="0.5"/>
+              </filter>
+              <path id="star" d="M0,-1 L0.225,-0.309 L0.951,-0.309 L0.363,0.118 L0.588,0.809 L0,0.382 L-0.588,0.809 L-0.363,0.118 L-0.951,-0.309 L-0.225,-0.309 Z"/>
+            </defs>
+            <rect x="20" y="30" width="480" height="400" rx="26" fill="url(#panel)" stroke="#1c568e" stroke-opacity=".6"/>
+            <!-- soft glow behind plane -->
+            <circle cx="260" cy="150" r="118" fill="url(#glow)"/>
+            <!-- route arc -->
+            <path d="M120 300 C 176 112, 344 112, 400 300" fill="none" stroke="#57b6f2" stroke-width="3" stroke-dasharray="2 12" stroke-linecap="round" opacity=".9"/>
+            <!-- plane (top view airliner) -->
+            <g transform="translate(250 146) rotate(-8)">
+              <!-- main wings (swept back) -->
+              <path d="M20 -4 L -16 -60 L -3 -60 L 44 -2 Z" fill="#9cc0e6"/>
+              <path d="M20 4 L -16 60 L -3 60 L 44 2 Z" fill="#9cc0e6"/>
+              <!-- horizontal stabilizers -->
+              <path d="M-52 -3 L -76 -28 L -66 -28 L -44 -2 Z" fill="#a9cbec"/>
+              <path d="M-52 3 L -76 28 L -66 28 L -44 2 Z" fill="#a9cbec"/>
+              <!-- engines -->
+              <ellipse cx="8" cy="-22" rx="9" ry="4.6" fill="#7ea9d6"/>
+              <ellipse cx="8" cy="22" rx="9" ry="4.6" fill="#7ea9d6"/>
+              <!-- fuselage -->
+              <path d="M86 0 C 78 -9, 40 -12, -34 -12 C -58 -12, -76 -9, -84 0 C -76 9, -58 12, -34 12 C 40 12, 78 9, 86 0 Z" fill="url(#plane)"/>
+              <!-- vertical tail fin -->
+              <path d="M-84 0 L -98 -18 L -86 -18 L -66 -3 Z" fill="#cfe2f4"/>
+              <!-- cockpit -->
+              <path d="M86 0 C 80 -6, 72 -7, 66 -6 L 66 6 C 72 7, 80 6, 86 0 Z" fill="#bcd6ef"/>
+              <!-- windows -->
+              <circle cx="42" cy="0" r="3.1" fill="#1e8fe0"/>
+              <circle cx="26" cy="0" r="3.1" fill="#1e8fe0"/>
+              <circle cx="10" cy="0" r="3.1" fill="#1e8fe0"/>
+              <circle cx="-6" cy="0" r="3.1" fill="#1e8fe0"/>
+            </g>
+            <!-- origin: China flag -->
+            <g transform="translate(96 284)" filter="url(#ds)">
+              <rect width="48" height="32" rx="4" fill="#de2910"/>
+              <g fill="#ffde00">
+                <use href="#star" transform="translate(12 12) scale(6.5)"/>
+                <use href="#star" transform="translate(25 5) scale(2.3)"/>
+                <use href="#star" transform="translate(31 11) scale(2.3)"/>
+                <use href="#star" transform="translate(31 19) scale(2.3)"/>
+                <use href="#star" transform="translate(25 25) scale(2.3)"/>
+              </g>
+              <rect width="48" height="32" rx="4" fill="none" stroke="#ffffff" stroke-opacity=".9" stroke-width="2"/>
+            </g>
+            <text x="120" y="336" fill="#dbeafe" font-family="Poppins,sans-serif" font-size="15" font-weight="700" text-anchor="middle">China</text>
+            <!-- destination: Argentina flag -->
+            <g transform="translate(376 284)" filter="url(#ds)">
+              <clipPath id="argClip"><rect width="48" height="32" rx="4"/></clipPath>
+              <g clip-path="url(#argClip)">
+                <rect width="48" height="32" fill="#ffffff"/>
+                <rect width="48" height="10.7" fill="#74acdf"/>
+                <rect y="21.3" width="48" height="10.7" fill="#74acdf"/>
+                <g stroke="#f6b40e" stroke-width="1.6" stroke-linecap="round">
+                  <line x1="29.5" y1="16" x2="33" y2="16"/>
+                  <line x1="18.5" y1="16" x2="15" y2="16"/>
+                  <line x1="24" y1="9.5" x2="24" y2="6"/>
+                  <line x1="24" y1="22.5" x2="24" y2="26"/>
+                  <line x1="28.6" y1="11.4" x2="31.1" y2="8.9"/>
+                  <line x1="19.4" y1="20.6" x2="16.9" y2="23.1"/>
+                  <line x1="28.6" y1="20.6" x2="31.1" y2="23.1"/>
+                  <line x1="19.4" y1="11.4" x2="16.9" y2="8.9"/>
+                </g>
+                <circle cx="24" cy="16" r="4.6" fill="#f6b40e"/>
+              </g>
+              <rect width="48" height="32" rx="4" fill="none" stroke="#ffffff" stroke-opacity=".9" stroke-width="2"/>
+            </g>
+            <text x="400" y="336" fill="#dbeafe" font-family="Poppins,sans-serif" font-size="15" font-weight="700" text-anchor="middle">Argentina</text>
+          </svg>
         </div>
       </div>
     </section>
 
-    <!-- PROCESO 4 pasos -->
+    <!-- ===================== SERVICIO (4 pasos logística) ===================== -->
     <section class="section" id="servicio">
       <div class="container">
         <div class="section-head reveal">
-          <h2>Vos encontrás el producto. <span class="blue">Nosotros te ayudamos a traerlo.</span></h2>
+          <span class="eyebrow">Nuestro servicio</span>
+          <h2>De la fábrica en China a la puerta de tu negocio</h2>
+          <p>Nos ocupamos de toda la logística para que vos solo te enfoques en elegir y vender.</p>
         </div>
         <div class="flow">
-          <div class="flow-card reveal">
+          <article class="flow-card reveal">
+            <span class="num">1</span>
             <div class="flow-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V9l9-6 9 6v12"/><path d="M3 21h18M9 21v-6h6v6"/></svg></div>
-            <h3>Recepción</h3><p>En nuestro depósito en China.</p>
-          </div>
-          <div class="flow-card reveal">
+            <h3>Recepción en China</h3>
+            <p>Recibimos tu mercadería en nuestro depósito en China.</p>
+          </article>
+          <article class="flow-card reveal">
+            <span class="num">2</span>
             <div class="flow-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8l-9-5-9 5v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></div>
-            <h3>Consolidación</h3><p>De tus paquetes de distintos proveedores.</p>
-          </div>
-          <div class="flow-card reveal">
+            <h3>Consolidación</h3>
+            <p>Unificamos los paquetes de tus distintos proveedores en un solo envío.</p>
+          </article>
+          <article class="flow-card reveal">
+            <span class="num">3</span>
             <div class="flow-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5a2.1 2.1 0 0 0-3-3L13 8 4.8 6.2a.5.5 0 0 0-.5.8l4 4-2 3H3l2 3 3 2v-3.3l3-2 4 4a.5.5 0 0 0 .8-.5z"/></svg></div>
-            <h3>Envío internacional</h3><p>Por courier, con seguimiento.</p>
-          </div>
-          <div class="flow-card reveal">
+            <h3>Envío internacional</h3>
+            <p>Despachamos por courier internacional con seguimiento de punta a punta.</p>
+          </article>
+          <article class="flow-card reveal">
+            <span class="num">4</span>
             <div class="flow-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-            <h3>Entrega en Argentina</h3><p>En la puerta de tu negocio.</p>
-          </div>
+            <h3>Entrega en Argentina</h3>
+            <p>Llega a tu dirección, en la puerta de tu negocio, en cualquier provincia.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- IDEAL PARA + COBERTURA -->
-    <section class="section section--soft">
-      <div class="container">
-        <div class="split">
-          <div class="panel reveal">
-            <h3>Ideal para</h3>
-            <div class="ideal-list">
-              <div class="ideal-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/></svg></span> Repuestos y componentes</div>
-              <div class="ideal-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-2.5z"/></svg></span> Herramientas e insumos</div>
-              <div class="ideal-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/></svg></span> Muestras y pequeñas compras</div>
-              <div class="ideal-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V8l5-4v17M8 21V4l6 3v14M14 21V7l7 3v11H3"/></svg></span> Productos para tu negocio</div>
-              <div class="ideal-item"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M2 10h20M6 15h4"/></svg></span> Asistencia en pagos a tu proveedor</div>
-            </div>
-          </div>
-          <div class="sign reveal">
-            <h3 style="font-family:var(--head);font-weight:700;font-size:20px;color:var(--navy);margin-bottom:6px">Llegamos a todo el país</h3>
-            <p style="color:var(--muted);margin-bottom:14px">Con foco en el norte argentino.</p>
-            <div class="provinces">
-              <span class="prov"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5 8 12 8 12s8-7 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>Jujuy</span>
-              <span class="prov">Salta</span><span class="prov">Tucumán</span><span class="prov">Santiago del Estero</span>
-              <span class="prov">Catamarca</span><span class="prov">La Rioja</span><span class="prov">Formosa</span>
-              <span class="prov">Chaco</span><span class="prov">Misiones</span><span class="prov all">y todo el país</span>
-            </div>
-            <p class="quote-line">Pequeños envíos. <span class="blue">Grandes oportunidades.</span></p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CÓMO FUNCIONA 5 pasos -->
-    <section class="section" id="como-funciona">
+    <!-- ===================== CÓMO FUNCIONA (5 pasos) ===================== -->
+    <section class="section section--soft" id="como-funciona">
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow">¿Cómo funciona?</span>
           <h2>Es muy simple</h2>
+          <p>Vos encontrás el producto. Nosotros te ayudamos a traerlo, paso a paso.</p>
         </div>
         <div class="steps">
           <div class="step reveal">
             <div class="step-rail"><div class="step-num">1</div><div class="step-line"></div></div>
-            <div class="step-body"><h3>Buscá tu producto y proveedor en China</h3><p>Encontrá lo que necesitás en plataformas como Alibaba, 1688, Made-in-China o en la página del fabricante.</p><span class="step-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg> Vos elegís el producto y negociás con el proveedor.</span></div>
+            <div class="step-body">
+              <h3>Buscá tu producto y proveedor en China</h3>
+              <p>Encontrá lo que necesitás en plataformas como Alibaba, 1688, Made-in-China o en la página del fabricante.</p>
+              <span class="step-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg> Vos elegís el producto y negociás con el proveedor.</span>
+            </div>
           </div>
           <div class="step reveal">
             <div class="step-rail"><div class="step-num">2</div><div class="step-line"></div></div>
-            <div class="step-body"><h3>Completá el formulario de cotización</h3><p>Escribinos por WhatsApp o Instagram y pasanos los datos de tu producto, proveedor y envío.</p><span class="step-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg> Cuanta más info nos brindes, más precisa será la cotización.</span></div>
+            <div class="step-body">
+              <h3>Completá el formulario de cotización</h3>
+              <p>Escribinos por WhatsApp o Instagram y pasanos los datos de tu producto, proveedor y envío.</p>
+              <span class="step-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg> Cuanta más información nos brindes, más rápida y precisa será la cotización.</span>
+            </div>
           </div>
           <div class="step reveal">
             <div class="step-rail"><div class="step-num">3</div><div class="step-line"></div></div>
-            <div class="step-body"><h3>Recibí tu cotización</h3><p>Analizamos tu operación y te enviamos una propuesta con las mejores opciones de envío, tiempos y costos.</p><span class="step-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Respuesta rápida y atención personalizada.</span></div>
+            <div class="step-body">
+              <h3>Recibí tu cotización</h3>
+              <p>Analizamos tu operación y te enviamos una propuesta con las mejores opciones de envío, tiempos y costos.</p>
+              <span class="step-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Respuesta rápida y atención personalizada.</span>
+            </div>
           </div>
           <div class="step reveal">
             <div class="step-rail"><div class="step-num">4</div><div class="step-line"></div></div>
-            <div class="step-body"><h3>Gestionamos el pago al proveedor</h3><p>Si no podés pagar al exterior, realizamos el pago a tu proveedor en China y coordinamos toda la operación por vos.</p><span class="step-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18"/></svg> Pago seguro y confiable.</span></div>
+            <div class="step-body">
+              <h3>Gestionamos el pago al proveedor</h3>
+              <p>Si no podés pagar al exterior, realizamos el pago a tu proveedor en China y coordinamos toda la operación por vos.</p>
+              <span class="step-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18"/></svg> Pago seguro y confiable.</span>
+            </div>
           </div>
           <div class="step reveal">
             <div class="step-rail"><div class="step-num">5</div><div class="step-line"></div></div>
-            <div class="step-body"><h3>Recibí tu mercadería en Argentina</h3><p>Nos encargamos de la recepción, consolidación, envío por courier internacional y seguimiento hasta tu dirección.</p><span class="step-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V9l9-6 9 6v12H3z"/><path d="M9 21v-6h6v6"/></svg> Tu producto, en la puerta de tu negocio.</span></div>
+            <div class="step-body">
+              <h3>Recibí tu mercadería en Argentina</h3>
+              <p>Nos encargamos de la recepción, consolidación, envío por courier internacional y seguimiento hasta tu dirección.</p>
+              <span class="step-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V9l9-6 9 6v12H3z"/><path d="M9 21v-6h6v6"/></svg> Tu producto, en la puerta de tu negocio.</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- COTIZACIÓN -->
+    <!-- ===================== IDEAL PARA ===================== -->
+    <section class="section" id="ideal">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Ideal para</span>
+          <h2>Pensado para tu negocio</h2>
+          <p>Traemos justo lo que necesitás, sin mínimos imposibles.</p>
+        </div>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/></svg></div>
+            <div><h3>Repuestos y componentes</h3><p>Piezas y partes específicas para tu rubro.</p></div>
+          </article>
+          <article class="card reveal">
+            <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-2.5z"/></svg></div>
+            <div><h3>Herramientas e insumos</h3><p>Equipamiento y consumibles para trabajar.</p></div>
+          </article>
+          <article class="card reveal">
+            <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/></svg></div>
+            <div><h3>Muestras y pequeñas compras</h3><p>Probá antes de comprar en volumen.</p></div>
+          </article>
+          <article class="card reveal">
+            <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V8l5-4v17M8 21V4l6 3v14M14 21V7l7 3v11H3"/><path d="M18 13h.01M18 17h.01"/></svg></div>
+            <div><h3>Productos para tu negocio</h3><p>Mercadería para revender o abastecerte.</p></div>
+          </article>
+          <article class="card reveal">
+            <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M2 10h20M6 15h4"/></svg></div>
+            <div><h3>Asistencia en pagos</h3><p>Pagamos a tu proveedor en China por vos.</p></div>
+          </article>
+          <article class="card reveal" style="background:linear-gradient(150deg,#0a2540,#0e3a66);border-color:transparent;color:#fff;">
+            <div class="card-ico" style="background:rgba(255,255,255,.14)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg></div>
+            <div><h3 style="color:#fff">Tu negocio sin fronteras</h3><p style="color:#c6d9ea">El mundo también impulsa tu negocio.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COBERTURA ===================== -->
+    <section class="section section--soft" id="cobertura">
+      <div class="container">
+        <div class="coverage">
+          <div class="reveal">
+            <span class="eyebrow">Cobertura</span>
+            <h2>Llegamos a todo el país</h2>
+            <p>Operamos con foco en el norte argentino y enviamos a todas las provincias.</p>
+            <div class="provinces">
+              <span class="prov"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5 8 12 8 12s8-7 8-12a8 8 0 0 0-8-8z" fill="none" stroke="currentColor" stroke-width="2"/></svg> Jujuy</span>
+              <span class="prov"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5 8 12 8 12s8-7 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg> Salta</span>
+              <span class="prov"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5 8 12 8 12s8-7 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg> Tucumán</span>
+              <span class="prov"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5 8 12 8 12s8-7 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg> Santiago del Estero</span>
+              <span class="prov"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5 8 12 8 12s8-7 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg> Catamarca</span>
+              <span class="prov"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5 8 12 8 12s8-7 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg> La Rioja</span>
+              <span class="prov"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5 8 12 8 12s8-7 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg> Formosa</span>
+              <span class="prov"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5 8 12 8 12s8-7 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg> Chaco</span>
+              <span class="prov"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5 8 12 8 12s8-7 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg> Misiones</span>
+              <span class="prov" style="background:var(--blue);color:#fff;border-color:var(--blue)">y todo el país</span>
+            </div>
+            <p class="coverage-quote">Pequeños envíos. <span>Grandes oportunidades.</span></p>
+          </div>
+          <div class="map-wrap reveal" aria-hidden="true">
+            <svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="cov" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4f9fe"/><stop offset="1" stop-color="#e2eefb"/></linearGradient>
+                <linearGradient id="pin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#57b6f2"/><stop offset="1" stop-color="#1573bd"/></linearGradient>
+              </defs>
+              <rect x="18" y="18" width="284" height="284" rx="34" fill="url(#cov)" stroke="#d3e6f7" stroke-width="2"/>
+              <circle cx="160" cy="160" r="108" fill="none" stroke="#bcdcf5" stroke-width="2" stroke-dasharray="2 10"/>
+              <circle cx="160" cy="160" r="74" fill="none" stroke="#a9d1f2" stroke-width="2" stroke-dasharray="2 10"/>
+              <circle cx="160" cy="160" r="40" fill="#dcecfa"/>
+              <!-- small province dots around -->
+              <circle cx="160" cy="52" r="6" fill="#1e8fe0"/>
+              <circle cx="252" cy="108" r="6" fill="#1e8fe0"/>
+              <circle cx="252" cy="212" r="6" fill="#1e8fe0"/>
+              <circle cx="160" cy="268" r="6" fill="#1e8fe0"/>
+              <circle cx="68" cy="212" r="6" fill="#1e8fe0"/>
+              <circle cx="68" cy="108" r="6" fill="#1e8fe0"/>
+              <!-- central pin -->
+              <path d="M160 108 c -24 0 -42 18 -42 42 c 0 30 42 62 42 62 s 42 -32 42 -62 c 0 -24 -18 -42 -42 -42 z" fill="url(#pin)"/>
+              <circle cx="160" cy="150" r="15" fill="#fff"/>
+              <circle cx="160" cy="150" r="7" fill="#1573bd"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COTIZACIÓN ===================== -->
     <section class="section section--soft" id="cotizar">
       <div class="container">
         <div class="section-head reveal">
@@ -237,10 +357,20 @@
           <div class="quote-card">
             <form id="quoteForm">
               <div class="form-grid">
-                <div class="field"><label for="nombre">Nombre <span class="req">*</span></label><input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required data-req></div>
-                <div class="field"><label for="telefono">WhatsApp <span class="req">*</span></label><input id="telefono" name="telefono" type="tel" placeholder="Ej: 385 334 1111" required data-req></div>
-                <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com"></div>
-                <div class="field"><label for="tipoOperacion">¿Qué necesitás? <span class="req">*</span></label>
+                <div class="field">
+                  <label for="nombre">Nombre <span class="req">*</span></label>
+                  <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required data-req>
+                </div>
+                <div class="field">
+                  <label for="telefono">WhatsApp <span class="req">*</span></label>
+                  <input id="telefono" name="telefono" type="tel" placeholder="Ej: 385 334 1111" required data-req>
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com">
+                </div>
+                <div class="field">
+                  <label for="tipoOperacion">¿Qué necesitás? <span class="req">*</span></label>
                   <select id="tipoOperacion" name="tipoOperacion" required data-req>
                     <option value="">Seleccionar…</option>
                     <option value="Courier">Courier (compra pequeña / personal)</option>
@@ -248,19 +378,44 @@
                     <option value="Búsqueda de proveedor">Búsqueda de proveedor</option>
                   </select>
                 </div>
-                <div class="field field--full" id="field-empresa"><label for="empresa">Empresa</label><input id="empresa" name="empresa" type="text" placeholder="Nombre de tu empresa"></div>
-                <div class="field field--full"><label for="producto">Producto <span class="req">*</span></label><input id="producto" name="producto" type="text" placeholder="¿Qué querés importar?" required data-req></div>
-                <div class="field"><label for="cantidad">Cantidad</label><input id="cantidad" name="cantidad" type="text" placeholder="Ej: 100 unidades"></div>
-                <div class="field"><label for="paisOrigen">País de origen</label>
+                <div class="field field--full" id="field-empresa">
+                  <label for="empresa">Empresa</label>
+                  <input id="empresa" name="empresa" type="text" placeholder="Nombre de tu empresa">
+                </div>
+                <div class="field field--full">
+                  <label for="producto">Producto <span class="req">*</span></label>
+                  <input id="producto" name="producto" type="text" placeholder="¿Qué querés importar?" required data-req>
+                </div>
+                <div class="field">
+                  <label for="cantidad">Cantidad</label>
+                  <input id="cantidad" name="cantidad" type="text" placeholder="Ej: 100 unidades">
+                </div>
+                <div class="field">
+                  <label for="paisOrigen">País de origen</label>
                   <select id="paisOrigen" name="paisOrigen">
-                    <option value="">Seleccionar…</option><option value="China">China</option>
-                    <option value="Estados Unidos">Estados Unidos</option><option value="Europa">Europa</option><option value="Otro">Otro</option>
+                    <option value="">Seleccionar…</option>
+                    <option value="China">China</option>
+                    <option value="Estados Unidos">Estados Unidos</option>
+                    <option value="Europa">Europa</option>
+                    <option value="Otro">Otro</option>
                   </select>
                 </div>
-                <div class="field" id="field-valor"><label for="valor">Valor estimado</label><input id="valor" name="valor" type="text" placeholder="Ej: USD 500"></div>
-                <div class="field" id="field-link"><label for="linkProducto">Link del producto</label><input id="linkProducto" name="linkProducto" type="url" placeholder="https://..."></div>
-                <div class="field field--full" id="field-especificaciones"><label for="especificaciones">Especificaciones técnicas</label><textarea id="especificaciones" name="especificaciones" placeholder="Detalles, medidas, certificaciones requeridas…"></textarea></div>
-                <div class="field field--full"><label for="observaciones">Observaciones</label><textarea id="observaciones" name="observaciones" placeholder="Cualquier dato extra que nos ayude a cotizar mejor"></textarea></div>
+                <div class="field" id="field-valor">
+                  <label for="valor">Valor estimado</label>
+                  <input id="valor" name="valor" type="text" placeholder="Ej: USD 500">
+                </div>
+                <div class="field" id="field-link">
+                  <label for="linkProducto">Link del producto</label>
+                  <input id="linkProducto" name="linkProducto" type="url" placeholder="https://...">
+                </div>
+                <div class="field field--full" id="field-especificaciones">
+                  <label for="especificaciones">Especificaciones técnicas</label>
+                  <textarea id="especificaciones" name="especificaciones" placeholder="Detalles, medidas, certificaciones requeridas…"></textarea>
+                </div>
+                <div class="field field--full">
+                  <label for="observaciones">Observaciones</label>
+                  <textarea id="observaciones" name="observaciones" placeholder="Cualquier dato extra que nos ayude a cotizar mejor"></textarea>
+                </div>
               </div>
               <div class="form-actions">
                 <button type="submit" class="btn-cotizar">
@@ -275,17 +430,17 @@
       </div>
     </section>
 
-    <!-- CTA -->
+    <!-- ===================== CTA ===================== -->
     <section class="section">
       <div class="container">
         <div class="cta reveal">
-          <h2>Tu negocio sin fronteras</h2>
-          <p>Escribinos y recibí tu cotización sin compromiso.</p>
-          <div class="phone"><a href="https://wa.me/5493853341111">385 334 1111</a></div>
+          <h2>¿Listo para importar?</h2>
+          <p>Escribinos por WhatsApp y recibí tu cotización sin compromiso. Te acompañamos en toda la operación.</p>
+          <div class="cta-phone"><a href="https://wa.me/5493853341111">385 334 1111</a></div>
           <div class="cta-actions">
             <a class="btn btn--wa" href="https://wa.me/5493853341111" target="_blank" rel="noopener">
-              <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.1 1.6 5.9L4 29l8.2-1.6A12 12 0 1 0 16 3Zm0 21.6c-1.8 0-3.5-.5-5-1.3l-.4-.2-4.9 1 .9-4.8-.2-.4A9.6 9.6 0 1 1 16 24.6Z"/></svg>
-              WhatsApp
+              <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.1 1.6 5.9L4 29l8.2-1.6A12 12 0 1 0 16 3Zm0 21.6c-1.8 0-3.5-.5-5-1.3l-.4-.2-4.9 1 .9-4.8-.2-.4A9.6 9.6 0 1 1 16 24.6Zm5.3-7.2c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1l-.9 1.1c-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.6-.5h-.6c-.2 0-.5.1-.8.4-1 1-1 2.4-1 3.8.1 1.4 1.1 2.8 1.2 3 .1.2 2 3.1 4.9 4.4 2.9 1.2 2.9.8 3.5.8.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3Z"/></svg>
+              Cotizá tu envío
             </a>
             <a class="btn btn--outline" href="https://instagram.com/importaya" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
@@ -297,36 +452,67 @@
     </section>
   </main>
 
-  <!-- FOOTER -->
+  <!-- ===================== FOOTER ===================== -->
   <footer class="footer">
     <div class="container">
-      <a class="logo" href="#top" aria-label="ImportaYa">
-        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true">
-          <rect width="64" height="64" rx="14" fill="#0d2f52"/>
-          <path d="M14 42 L40 42" stroke="#1e8fe0" stroke-width="4" stroke-linecap="round"/>
-          <path d="M34 36 L44 42 L34 48" fill="none" stroke="#1e8fe0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-          <rect x="18" y="18" width="20" height="16" rx="2.5" fill="#fff"/>
-          <path d="M18 24 H38 M28 18 V34" stroke="#0d2f52" stroke-width="2"/>
-        </svg>
-        <span class="logo-text"><span class="logo-word" style="color:#fff"><span style="color:#fff">IMPORTA</span><span class="y">YA</span></span><span class="logo-sub" style="color:#9fc0dd">by Vertex · Soluciones Globales</span></span>
-      </a>
-      <div style="text-align:right">
-        <p><a href="https://importaya.com.ar">importaya.com.ar</a> · <a href="https://wa.me/5493853341111">WhatsApp 385 334 1111</a> · <a href="https://instagram.com/importaya">@importaya</a></p>
-        <p style="color:#8fb0cd">Un servicio de <span class="brand-v">VERTEX Soluciones Globales</span></p>
+      <div>
+        <div class="logo on-dark">
+          <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#0d2f52"/>
+            <path d="M14 42 L40 42" stroke="#1e8fe0" stroke-width="4" stroke-linecap="round"/>
+            <path d="M34 36 L44 42 L34 48" fill="none" stroke="#1e8fe0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="18" y="18" width="20" height="16" rx="2.5" fill="#fff"/>
+            <path d="M18 24 H38 M28 18 V34" stroke="#0d2f52" stroke-width="2"/>
+          </svg>
+          <span class="logo-text">
+            <span class="logo-word"><span class="lw-b">IMPORTA</span><span class="lw-y">YA</span></span>
+            <span class="logo-sub">by Vertex · Soluciones Globales</span>
+          </span>
+        </div>
+        <p class="footer-tag">Tu negocio sin fronteras. Comprá en China, nosotros lo acercamos a tu negocio en Argentina.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <a href="#servicio">Servicio</a><br>
+        <a href="#como-funciona">Cómo funciona</a><br>
+        <a href="#ideal">Ideal para</a><br>
+        <a href="#cobertura">Cobertura</a>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <a href="https://wa.me/5493853341111" target="_blank" rel="noopener">
+          <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.1 1.6 5.9L4 29l8.2-1.6A12 12 0 1 0 16 3Zm0 21.6c-1.8 0-3.5-.5-5-1.3l-.4-.2-4.9 1 .9-4.8-.2-.4A9.6 9.6 0 1 1 16 24.6Z"/></svg>
+          WhatsApp 385 334 1111
+        </a><br>
+        <a href="https://instagram.com/importaya" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+          @importaya
+        </a><br>
+        <a href="https://importaya.com.ar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z"/></svg>
+          importaya.com.ar
+        </a>
       </div>
     </div>
-    <div class="container footer-bottom">© <span id="year">2026</span> ImportaYa — El mundo también impulsa tu negocio.</div>
+    <div class="container footer-bottom">
+      <span>© <span id="year">2026</span> ImportaYa. Todos los derechos reservados.</span>
+      <span>Un servicio de <span class="brand-v">VERTEX Soluciones Globales</span></span>
+    </div>
   </footer>
 
-  <a class="wa-fab" href="https://wa.me/5493853341111" target="_blank" rel="noopener" aria-label="Cotizá tu envío por WhatsApp 385 334 1111">
+  <!-- Floating WhatsApp -->
+  <a class="wa-fab" href="https://wa.me/5493853341111" target="_blank" rel="noopener" aria-label="Cotizá tu envío por WhatsApp: 385 334 1111">
     <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.02 3C9.4 3 4.03 8.37 4.03 14.99c0 2.1.55 4.15 1.6 5.96L4 29l8.24-1.6a11.9 11.9 0 0 0 3.78.62h.01c6.62 0 11.99-5.37 11.99-11.99C28.02 8.37 22.64 3 16.02 3Zm0 21.6h-.01c-1.16 0-2.3-.31-3.29-.9l-.24-.14-4.89.95.98-4.77-.15-.25a9.6 9.6 0 0 1-1.47-5.12c0-5.3 4.32-9.6 9.63-9.6 2.57 0 4.98 1 6.8 2.82a9.55 9.55 0 0 1 2.82 6.79c0 5.3-4.32 9.61-9.61 9.61Zm5.28-7.2c-.29-.14-1.71-.84-1.98-.94-.27-.1-.46-.14-.65.15-.19.29-.75.94-.92 1.13-.17.19-.34.22-.63.07-.29-.14-1.22-.45-2.33-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.14-.65-1.57-.89-2.15-.24-.57-.48-.49-.65-.5l-.56-.01c-.19 0-.51.07-.77.36-.27.29-1.01.99-1.01 2.42 0 1.43 1.04 2.81 1.18 3 .14.19 2.04 3.12 4.95 4.38.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.56-.08 1.71-.7 1.95-1.37.24-.67.24-1.25.17-1.37-.07-.12-.26-.19-.55-.34Z"/></svg>
-    <span class="lbl">Cotizá tu envío</span>
+    <span class="wa-label">Cotizá tu envío</span>
   </a>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-    var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
-    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+    // Reveal on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
   </script>
   <script src="/js/cotizacion.js" defer></script>
 </body>
