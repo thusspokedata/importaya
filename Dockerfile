@@ -1,4 +1,6 @@
 FROM nginx:alpine
+# Parchea paquetes de la base (CVE-2026-111497, brotli-libs) hasta que salga nginx:alpine reconstruido
+RUN apk upgrade --no-cache
 
 # Sitio estático (index.html + assets/) servido por nginx
 COPY nginx.conf /etc/nginx/conf.d/default.conf
