@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ImportaYa — Propuestas para el hero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .hero-preview { min-height: 100vh; padding: 42px 20px 56px; background: #071c31; }
+    .hero-preview-header { max-width: 1500px; margin: 0 auto 28px; color: #fff; text-align: center; }
+    .hero-preview-header h1 { font-size: clamp(26px, 4vw, 40px); }
+    .hero-preview-header p { margin-top: 10px; color: #9fbdd8; }
+    .hero-preview-grid { max-width: 1500px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; align-items: stretch; }
+    .hero-preview-card { overflow: hidden; border: 1px solid rgba(255,255,255,.16); border-radius: 24px; background: var(--navy); }
+    .hero-preview-card .hero { height: 100%; }
+    .hero-preview-card .hero .container { display: block; padding: 24px 12px 18px; }
+    .hero-preview-card h2 { margin: 0 8px 14px; color: #fff; font-size: 18px; line-height: 1.35; }
+    .hero-preview-card h2 span { display: block; margin-bottom: 5px; color: #57b6f2; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
+    .hero-preview-card .hero-art { max-width: 460px; }
+    @media (max-width: 940px) {
+      .hero-preview-grid { grid-template-columns: 1fr; max-width: 540px; }
+    }
+    @media (max-width: 560px) {
+      .hero-preview { padding: 28px 12px 36px; }
+      .hero-preview-card .hero .container { padding: 20px 0 12px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="hero-preview">
+    <header class="hero-preview-header">
+      <h1>Tres formas de contar el recorrido</h1>
+      <p>De China a la puerta de tu negocio · Rápido, seguro y simple</p>
+    </header>
+    <div class="hero-preview-grid">
+      <article class="hero-preview-card">
+        <section class="hero on-dark">
+          <div class="container">
+            <h2><span>Propuesta A</span>Ruta transpacífica</h2>
+            <div class="hero-art hero-art-a" aria-hidden="true">
+              <svg viewBox="0 0 520 460" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="hero-a-ocean" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#174f7d"/><stop offset="1" stop-color="#0a2540"/>
+                  </linearGradient>
+                  <linearGradient id="hero-a-route" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#57b6f2"/>
+                  </linearGradient>
+                  <clipPath id="hero-a-globe-clip"><circle cx="260" cy="214" r="174"/></clipPath>
+                  <filter id="hero-a-shadow" x="-30%" y="-30%" width="160%" height="170%">
+                    <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#04162c" flood-opacity=".4"/>
+                  </filter>
+                </defs>
+                <text x="260" y="25" fill="#9fc0dd" font-family="Inter,sans-serif" font-size="14" font-weight="600" letter-spacing="2" text-anchor="middle">DEL ORIGEN A TU PUERTA</text>
+                <ellipse cx="260" cy="218" rx="222" ry="107" fill="none" stroke="#57b6f2" stroke-opacity=".18" transform="rotate(-18 260 218)"/>
+                <circle cx="72" cy="276" r="4" fill="#57b6f2" opacity=".55"/>
+                <circle cx="442" cy="131" r="3" fill="#fff" opacity=".45"/>
+                <circle cx="260" cy="214" r="174" fill="url(#hero-a-ocean)" stroke="#3c76a6" stroke-width="2" filter="url(#hero-a-shadow)"/>
+                <g clip-path="url(#hero-a-globe-clip)">
+                  <ellipse cx="260" cy="214" rx="82" ry="174" fill="none" stroke="#dcecfa" stroke-opacity=".12"/>
+                  <ellipse cx="260" cy="214" rx="145" ry="174" fill="none" stroke="#dcecfa" stroke-opacity=".1"/>
+                  <path d="M86 214h348M260 40v348M105 135h310M105 293h310" fill="none" stroke="#dcecfa" stroke-opacity=".1"/>
+                  <path d="m73 140 25-42 44-24 49 7 26 22-14 21 9 24-31 14-16 29-28-4-17-25-29 4Z" fill="#4c87ad"/>
+                  <path d="m167 183 22 7 9 22-15 19-7 30-18-18 4-25-13-17Z" fill="#4c87ad"/>
+                  <path d="m338 79 37-14 48 15 32 37-17 28-32 1-17 24-30-15-8-30-27-18Z" fill="#3c76a6"/>
+                  <path d="m368 188 31 8 27 27-13 30-19 16-9 37-22 42-21-16 4-35-19-28 8-34-13-24Z" fill="#5794b7"/>
+                  <path d="m356 287 17 9-10 39-12-10Z" fill="#57b6f2" opacity=".7"/>
+                  <path d="M82 349c87 42 255 58 356-8v65H82Z" fill="#071c31" opacity=".25"/>
+                </g>
+                <path class="hero-art-a__route" d="M143 157C185 79 303 75 356 292" fill="none" stroke="#0a2540" stroke-width="7" stroke-linecap="round" opacity=".35"/>
+                <path class="hero-art-a__route" d="M143 157C185 79 303 75 356 292" fill="none" stroke="url(#hero-a-route)" stroke-width="3" stroke-dasharray="3 10" stroke-linecap="round"/>
+                <g transform="translate(143 157)">
+                  <circle r="15" fill="#e23b32" opacity=".22"/>
+                  <circle r="8" fill="#e23b32" stroke="#fff" stroke-width="2"/>
+                  <circle r="2.5" fill="#fff"/>
+                </g>
+                <g transform="translate(356 292)">
+                  <circle r="16" fill="#57b6f2" opacity=".25"/>
+                  <circle r="8" fill="#1e8fe0" stroke="#fff" stroke-width="2"/>
+                  <circle r="2.5" fill="#fff"/>
+                </g>
+                <g transform="translate(251 99) rotate(10)" filter="url(#hero-a-shadow)">
+                  <path d="m-19-9 19-10 19 10v22L0 23l-19-10Z" fill="#dcecfa"/>
+                  <path d="m-19-9 19 10 19-10M0 1v22" fill="none" stroke="#1573bd" stroke-width="2"/>
+                  <path d="m-9-14 19 10v9" fill="none" stroke="#1e8fe0" stroke-width="4"/>
+                </g>
+                <g>
+                  <rect x="91" y="177" width="105" height="36" rx="18" fill="#fff"/>
+                  <rect x="102" y="188" width="18" height="12" rx="2" fill="#e23b32"/>
+                  <path d="m108 189 1 3 3 .1-2.3 1.8.8 3-2.5-1.8-2.5 1.8.8-3-2.3-1.8 3-.1Z" fill="#ffde00" transform="scale(.65) translate(58 102)"/>
+                  <text x="128" y="200" fill="#0a2540" font-family="Poppins,sans-serif" font-size="14" font-weight="700">China</text>
+                </g>
+                <g>
+                  <rect x="310" y="313" width="139" height="36" rx="18" fill="#fff"/>
+                  <rect x="321" y="324" width="20" height="12" rx="2" fill="#74acdf"/>
+                  <rect x="321" y="328" width="20" height="4" fill="#fff"/>
+                  <circle cx="331" cy="330" r="1.7" fill="#f6b40e"/>
+                  <text x="349" y="336" fill="#0a2540" font-family="Poppins,sans-serif" font-size="14" font-weight="700">Argentina</text>
+                </g>
+                <rect x="105" y="407" width="310" height="34" rx="17" fill="#0d2f52" stroke="#315c82"/>
+                <g fill="#dcecfa" font-family="Inter,sans-serif" font-size="14" font-weight="600" text-anchor="middle">
+                  <text x="153" y="428">Recepción</text><text x="264" y="428">Envío courier</text><text x="371" y="428">Entrega</text>
+                </g>
+                <circle cx="203" cy="423" r="2" fill="#57b6f2"/><circle cx="321" cy="423" r="2" fill="#57b6f2"/>
+              </svg>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <article class="hero-preview-card">
+        <section class="hero on-dark">
+          <div class="container">
+            <h2><span>Propuesta B</span>El recorrido, paso a paso</h2>
+            <div class="hero-art hero-art-b" aria-hidden="true">
+              <svg viewBox="0 0 520 460" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="hero-b-platform" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#174f7d"/><stop offset="1" stop-color="#0a2540"/>
+                  </linearGradient>
+                  <linearGradient id="hero-b-box" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#bcdcf3"/>
+                  </linearGradient>
+                  <filter id="hero-b-shadow" x="-30%" y="-30%" width="160%" height="170%">
+                    <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#04162c" flood-opacity=".35"/>
+                  </filter>
+                </defs>
+                <ellipse cx="260" cy="389" rx="194" ry="34" fill="#04162c" opacity=".25"/>
+                <path d="m260 42 226 164-226 211L34 206Z" fill="url(#hero-b-platform)" stroke="#376f9c" stroke-width="2"/>
+                <path d="m260 70 191 137-191 178L69 207Z" fill="none" stroke="#dcecfa" stroke-opacity=".08"/>
+                <path d="m147 145 226 167M373 144 147 315M260 43v374M34 206h452" stroke="#dcecfa" stroke-opacity=".06"/>
+                <path d="M105 190 198 256 301 150 405 269" fill="none" stroke="#57b6f2" stroke-width="3" stroke-dasharray="3 10" stroke-linecap="round"/>
+                <circle cx="105" cy="190" r="6" fill="#e23b32" stroke="#fff" stroke-width="2"/>
+                <circle cx="198" cy="256" r="5" fill="#57b6f2"/>
+                <circle cx="301" cy="150" r="5" fill="#57b6f2"/>
+                <circle cx="405" cy="269" r="6" fill="#1e8fe0" stroke="#fff" stroke-width="2"/>
+                <g transform="translate(62 102)" filter="url(#hero-b-shadow)">
+                  <path d="m0 35 49-28 52 30-50 29Z" fill="#dcecfa"/>
+                  <path d="M0 35v50l51 29V66Z" fill="#8ab9d9"/>
+                  <path d="m51 66 50-29v50l-50 27Z" fill="#c4e0f2"/>
+                  <path d="m13 48 26 15v35L13 83Z" fill="#0d2f52"/>
+                  <path d="m19 57 14 8M19 66l14 8M19 75l14 8" stroke="#57b6f2" stroke-width="2"/>
+                  <path d="m65 71 23-13v18L65 89Z" fill="#1e8fe0"/>
+                  <path d="m-4 34 53-31 56 32-4 7L49 12 0 41Z" fill="#1e8fe0"/>
+                </g>
+                <g transform="translate(161 211)" filter="url(#hero-b-shadow)">
+                  <path d="m0 25 34-20 36 20-35 21Z" fill="#fff"/>
+                  <path d="M0 25v37l35 20V46Z" fill="#8ab9d9"/>
+                  <path d="m35 46 35-21v37L35 82Z" fill="url(#hero-b-box)"/>
+                  <path d="m17 15 35 20v15" fill="none" stroke="#1e8fe0" stroke-width="5"/>
+                  <path d="m41 4 24-14 26 15-25 15Z" fill="#dcecfa"/>
+                  <path d="M41 4v25l25 14V20Z" fill="#65a5cf"/>
+                  <path d="m66 20 25-15v25L66 43Z" fill="#dcecfa"/>
+                  <path d="m9 66 25-14 26 15-25 15Z" fill="#fff"/>
+                  <path d="M9 66v24l26 15V82Z" fill="#8ab9d9"/>
+                  <path d="m35 82 25-15v25L35 105Z" fill="#dcecfa"/>
+                </g>
+                <g transform="translate(266 85)" filter="url(#hero-b-shadow)">
+                  <g class="hero-art-b__plane">
+                    <path d="M0 47c13-8 29-12 49-15l30-28 11 1-17 29 39 4c13 1 22 5 25 10-4 6-13 8-25 7l-40-3-26 22-12-1 11-24-34-5Z" fill="#fff"/>
+                    <path d="m74 34 17-24 9 1-10 25M46 49l-17 20-9-1 7-23" fill="#8ab9d9"/>
+                    <path d="M97 42h23M84 40h7" stroke="#1e8fe0" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M1 47c28 4 79 11 136 1-4 6-13 8-25 7l-40-3-26 22-12-1 11-24-34-5Z" fill="#dcecfa"/>
+                  </g>
+                </g>
+                <g transform="translate(365 211)" filter="url(#hero-b-shadow)">
+                  <path d="m0 29 42-24 45 26-43 25Z" fill="#dcecfa"/>
+                  <path d="M0 29v62l44 25V56Z" fill="#8ab9d9"/>
+                  <path d="m44 56 43-25v62l-43 23Z" fill="#dcecfa"/>
+                  <path d="m8 47 27 16v42L8 89Z" fill="#fff"/>
+                  <path d="m8 47 27 16-9 6-26-16Z" fill="#e23b32"/>
+                  <path d="m14 70 14 8v20l-14-8Z" fill="#0d2f52"/>
+                  <path d="m53 64 25-14v17l-25 14Z" fill="#1e8fe0"/>
+                  <path d="m-4 28 46-27 49 28-4 7-45-25L0 35Z" fill="#1e8fe0"/>
+                  <g transform="translate(-43 80)">
+                    <path d="m0 11 29-16 22 12v23L22 46 0 34Z" fill="#fff"/>
+                    <path d="m29-5 22 12v23L29 41Z" fill="#dcecfa"/>
+                    <path d="m51 7 14 8 10 18-24 13V30Z" fill="#1e8fe0"/>
+                    <path d="m56 16 8 4 6 11-14 8V25Z" fill="#0d2f52"/>
+                    <ellipse cx="18" cy="38" rx="7" ry="9" fill="#0a2540"/><ellipse cx="57" cy="40" rx="7" ry="9" fill="#0a2540"/>
+                  </g>
+                </g>
+                <g font-family="Inter,sans-serif">
+                  <rect x="40" y="215" width="145" height="43" rx="12" fill="#0a2540" stroke="#315c82"/>
+                  <text x="53" y="233" fill="#57b6f2" font-size="14" font-weight="700">1 · RECEPCIÓN</text>
+                  <text x="53" y="249" fill="#fff" font-size="14" font-weight="600">Depósito en China</text>
+                  <rect x="142" y="329" width="164" height="43" rx="12" fill="#0a2540" stroke="#315c82"/>
+                  <text x="155" y="347" fill="#57b6f2" font-size="14" font-weight="700">2 · CONSOLIDACIÓN</text>
+                  <text x="155" y="363" fill="#fff" font-size="14" font-weight="600">Un solo envío</text>
+                  <rect x="277" y="177" width="158" height="43" rx="12" fill="#0a2540" stroke="#315c82"/>
+                  <text x="290" y="195" fill="#57b6f2" font-size="14" font-weight="700">3 · ENVÍO COURIER</text>
+                  <text x="290" y="211" fill="#fff" font-size="14" font-weight="600">China → Argentina</text>
+                  <rect x="341" y="349" width="143" height="43" rx="12" fill="#0a2540" stroke="#315c82"/>
+                  <text x="354" y="367" fill="#57b6f2" font-size="14" font-weight="700">4 · ENTREGA</text>
+                  <text x="354" y="383" fill="#fff" font-size="14" font-weight="600">En tu negocio</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <article class="hero-preview-card">
+        <section class="hero on-dark">
+          <div class="container">
+            <h2><span>Propuesta C</span>Tu envío, siempre a la vista</h2>
+            <div class="hero-art hero-art-c" aria-hidden="true">
+              <svg viewBox="0 0 520 460" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="hero-c-card" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef6fd"/>
+                  </linearGradient>
+                  <filter id="hero-c-shadow" x="-20%" y="-20%" width="140%" height="150%">
+                    <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#04162c" flood-opacity=".35"/>
+                  </filter>
+                </defs>
+                <circle cx="65" cy="75" r="45" fill="none" stroke="#57b6f2" stroke-opacity=".16"/>
+                <circle cx="465" cy="390" r="62" fill="none" stroke="#57b6f2" stroke-opacity=".14"/>
+                <path d="M29 330h22M40 319v22M462 88h22M473 77v22" stroke="#57b6f2" stroke-width="2" stroke-linecap="round" opacity=".35"/>
+                <rect x="40" y="28" width="440" height="404" rx="28" fill="url(#hero-c-card)" filter="url(#hero-c-shadow)"/>
+                <rect x="64" y="54" width="48" height="48" rx="14" fill="#1e8fe0"/>
+                <path d="m76 72 12-7 12 7v14l-12 7-12-7Z" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
+                <path d="m76 72 12 7 12-7M88 79v14M82 69l12 7" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
+                <text x="126" y="73" fill="#0a2540" font-family="Poppins,sans-serif" font-size="16" font-weight="700">Importación a tu negocio</text>
+                <text x="126" y="94" fill="#5a7186" font-family="Inter,sans-serif" font-size="14">Nos ocupamos de todo</text>
+                <rect x="342" y="56" width="114" height="32" rx="16" fill="#dcecfa"/>
+                <circle cx="352" cy="72" r="4" fill="#1e8fe0"/>
+                <text x="364" y="77" fill="#1573bd" font-family="Inter,sans-serif" font-size="14" font-weight="700">EN CAMINO</text>
+                <path d="M64 118h392" stroke="#e2ecf5"/>
+                <rect x="64" y="136" width="392" height="78" rx="16" fill="#fff" stroke="#e2ecf5"/>
+                <circle cx="90" cy="164" r="7" fill="#e23b32"/>
+                <text x="106" y="159" fill="#5a7186" font-family="Inter,sans-serif" font-size="14" font-weight="600" letter-spacing="1">ORIGEN</text>
+                <text x="106" y="181" fill="#0a2540" font-family="Poppins,sans-serif" font-size="17" font-weight="700">Shenzhen, China</text>
+                <path d="M267 174h53m-8-8 8 8-8 8" fill="none" stroke="#1e8fe0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M340 157c0 10-10 18-10 18s-10-8-10-18a10 10 0 1 1 20 0Z" fill="#1e8fe0"/>
+                <circle cx="330" cy="157" r="3.5" fill="#fff"/>
+                <text x="348" y="159" fill="#5a7186" font-family="Inter,sans-serif" font-size="14" font-weight="600" letter-spacing="1">DESTINO</text>
+                <text x="348" y="181" fill="#0a2540" font-family="Poppins,sans-serif" font-size="17" font-weight="700">Tu negocio</text>
+                <text x="64" y="243" fill="#5a7186" font-family="Inter,sans-serif" font-size="14" font-weight="700" letter-spacing="1.2">SEGUIMIENTO DEL ENVÍO</text>
+                <path d="M81 273v100" stroke="#dcecfa" stroke-width="3"/>
+                <path d="M81 273v49" stroke="#1e8fe0" stroke-width="3"/>
+                <circle cx="81" cy="273" r="12" fill="#1e8fe0"/>
+                <path d="m76 273 3 3 7-7" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <text x="108" y="270" fill="#0a2540" font-family="Inter,sans-serif" font-size="14" font-weight="600">Recibido en China</text>
+                <text x="108" y="287" fill="#5a7186" font-family="Inter,sans-serif" font-size="14">En nuestro depósito</text>
+                <circle cx="81" cy="322" r="12" fill="#1e8fe0"/>
+                <path d="m76 322 3 3 7-7" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <text x="108" y="319" fill="#0a2540" font-family="Inter,sans-serif" font-size="14" font-weight="600">Paquetes consolidados</text>
+                <text x="108" y="336" fill="#5a7186" font-family="Inter,sans-serif" font-size="14">Todo junto en un solo envío</text>
+                <circle class="hero-art-c__pulse" cx="81" cy="371" r="16" fill="#1e8fe0" opacity=".16"/>
+                <circle cx="81" cy="371" r="11" fill="#fff" stroke="#1e8fe0" stroke-width="3"/>
+                <circle cx="81" cy="371" r="4" fill="#1e8fe0"/>
+                <text x="108" y="368" fill="#0a2540" font-family="Inter,sans-serif" font-size="14" font-weight="700">En camino por courier</text>
+                <text x="108" y="385" fill="#1573bd" font-family="Inter,sans-serif" font-size="14" font-weight="600">Próxima parada: la puerta de tu negocio</text>
+                <rect x="290" y="394" width="166" height="30" rx="15" fill="#e9f8ef"/>
+                <path d="m303 409 3 3 6-7" fill="none" stroke="#1da851" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <text x="318" y="413" fill="#1da851" font-family="Inter,sans-serif" font-size="14" font-weight="600">Cobertura nacional</text>
+              </svg>
+            </div>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+</body>
+</html>
